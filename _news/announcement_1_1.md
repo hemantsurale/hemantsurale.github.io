@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
- Our paper on text-entry method for AR (STAR) is conditionally accepted at UIST'23. :sparkles: 
+ Our paper on Smartphone-analogous Typing for AR (STAR) is conditionally accepted at UIST'23. :sparkles: 

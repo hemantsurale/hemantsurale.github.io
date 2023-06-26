@@ -236,7 +236,7 @@ plugins:
 # Sitemap settings
 defaults:
   - scope:
-      path: "home/assets/"
+      path: "assets"
     values:
       sitemap: false
 

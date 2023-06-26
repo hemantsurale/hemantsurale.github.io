@@ -1,9 +1,10 @@
 $(document).ready(function () {
     
-    var theme = "light";
+    var theme = "dark";
     const userPref = window.matchMedia;
     if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
-      theme = "dark";
+        theme = "light";
+        console.log("Dark mode activated.");
     }
 
     if (theme == "dark") {

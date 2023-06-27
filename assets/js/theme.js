@@ -53,7 +53,7 @@ let setHighlight = (theme) => {
       console.log("no need to update image");
     }
     
-  } else {
+  } else if (theme == "light"){
     document.getElementById("highlight_theme_dark").media = "none";
     document.getElementById("highlight_theme_light").media = "";
     try {

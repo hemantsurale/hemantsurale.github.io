@@ -17,7 +17,7 @@ $(document).ready(function () {
           console.log("no need to update image");
         }
         
-      } else {
+      } else if (theme == "light"){
         try {
           document.getElementById("animated-gif").src = "../assets/img/logo_meta.gif";
           document.getElementById("animated-gif").style.height = '5%';

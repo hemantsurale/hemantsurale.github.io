@@ -168,7 +168,7 @@
           <span class="more-authors" title="click to view 6 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '6 more authors' ? 'Tovi Grossman, Jason Wu, Parastoo Abtahi, Christopher Collins, Michael Glueck, Hemant Bhaskar Surale' : '6 more authors';
+                var more_authors_text = element.text() == '6 more authors' ? 'Tovi Grossman, Jason Wu, Parastoo Abtahi, Christopher Collins, Michael Glueck, &lt;u&gt;Hemant Bhaskar Surale&lt;/u&gt;' : '6 more authors';
                 var cursorPosition = 0;
                 var textAdder = setInterval(function(){
                   element.text(more_authors_text.substring(0, cursorPosition + 1));

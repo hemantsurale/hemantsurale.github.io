@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
- Our paper on text-entry method for AR (STAR) is conditionally accepted at UIST'23. :sparkles: 
+ My intern [Taejun](https://taejun13.github.io/) presented [STAR](https://dl.acm.org/doi/abs/10.1145/3586183.3606803) at [UIST'23](https://uist.acm.org/2023/).

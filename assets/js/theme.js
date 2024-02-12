@@ -45,14 +45,24 @@ let setHighlight = (theme) => {
   if (theme == "dark") {
     document.getElementById("highlight_theme_light").media = "none";
     document.getElementById("highlight_theme_dark").media = "";
-    document.getElementById("animated-gif").src = "../assets/img/logo_meta_transp.png";
-    document.getElementById("animated-gif").style.height = '5%';
-    document.getElementById("animated-gif").style.width = '3%';
-  } else {
+    // try {
+    //   document.getElementById("animated-gif").src = "../assets/img/logo_meta_transp.png";
+    //   document.getElementById("animated-gif").style.height = '5%';
+    //   document.getElementById("animated-gif").style.width = '3%';
+    // } catch (error) {
+    //   console.log("no need to update image");
+    // }
+    
+  } else if (theme == "light"){
     document.getElementById("highlight_theme_dark").media = "none";
     document.getElementById("highlight_theme_light").media = "";
-    document.getElementById("animated-gif").src = "../assets/img/logo_meta.gif";
-    document.getElementById("animated-gif").style.height = '5%';
+    // try {
+    //   document.getElementById("animated-gif").src = "../assets/img/logo_meta.gif";
+    //   document.getElementById("animated-gif").style.height = '5%';
+    //   document.getElementById("animated-gif").style.width = '3%';
+    // } catch (error) {
+    //   console.log("no need to update image");
+    // }
   }
 };
 

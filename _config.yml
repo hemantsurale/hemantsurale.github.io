@@ -18,7 +18,7 @@ keywords: hemant surale, academic-website, portfolio-website, modes, human compu
 # Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 👓  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://hemantsurale.github.io # the base hostname & protocol for your site
 # baseurl: 
@@ -236,7 +236,7 @@ plugins:
 # Sitemap settings
 defaults:
   - scope:
-      path: "assets/**/*.*"
+      path: "assets"
     values:
       sitemap: false
 
@@ -366,7 +366,7 @@ enable_navbar_social:       false  # enables displaying social links in the
 enable_project_categories:  true   # enables categorization of projects into
                                    # multiple categories
 enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
-enable_progressbar:         true   # enables a horizontal progress bar linked to the vertical scroll position
+enable_progressbar:         false   # enables a horizontal progress bar linked to the vertical scroll position
 
 # -----------------------------------------------------------------------------
 # Library versions

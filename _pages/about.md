@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Research Scientist at <img id ="animated-gif" class="animated-gif" src="../assets/img/logo_meta.gif"> <a href="https://tech.facebook.com/reality-labs/">Reality Labs</a>
+subtitle: Research Scientist at <img id ="animated-gif" class="animated-gif" src="./assets/img/logo_meta_transparent.gif"> <a href="https://tech.facebook.com/reality-labs/">Reality Labs</a>
 
 profile:
   align: left
@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular 
   margin: 10px 10px 0px 0px;
   address: >
-    <center> 
+    <div> <center> 
       <a href="https://scholar.google.com/citations?user=nUfcFwUAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">
       <i class="fa-brands fa-google"></i></a> 
       | 
@@ -22,7 +22,7 @@ profile:
       | 
       <a href="mailto:hemantsurale@meta.com">
       <i class="fa fa-envelope"></i></a> 
-    </center> 
+    </center> </div>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"

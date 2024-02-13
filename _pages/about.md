@@ -30,10 +30,10 @@ social: false  # includes social icons at the bottom of the page
 latest_posts: false  # includes a list of the newest posts
 ---
 
-Hemant is a HCI+AI scientist. His main research interests include Mixed Reality Interfaces (MR), Wearable Computing (Rings and Wristbands), Input Interactions (Gestural interfaces), and Applied AI (Computer Vision).
+Hemant is a HCI+AI Scientist. His main research interests include Mixed Reality Interfaces (MR), Wearable Computing (Rings and Wristbands), Input Interactions (Gestural interfaces), and Applied AI (Computer Vision).
 
 He holds a Ph.D. in Computer Science from the University of Waterloo, Canada. He was advised by [Daniel Vogel](https://scholar.google.com/citations?user=Yi5nK1EAAAAJ&hl=en), [Mark Hancock](https://scholar.google.com/citations?hl=en&user=PYvcN3cAAAAJ), and [Edward Lank](https://scholar.google.com/citations?user=e7P8IwgAAAAJ&hl=en&oi=ao). He has been honored with the [David R. Cheriton Graduate Scholarship](https://cs.uwaterloo.ca/current-graduate-students/funding-and-awards/david-r-cheriton-graduate-scholarship) thrice and the [Snap Research Fellowship](https://snapresearchfs.splashthat.com/), alongside recognition through awards such as IDSA and CS Achievement Awards.
 
-His research focuses on optimizing productivity through user interface design, AI integrated development, and empirical evaluation, particularly emphasizing fundamental concepts like modes and mode-switching to establish practical design principles for diverse MR applications.
+He is passionate about maximizing productivity through user interface design, AI integrated development, and empirical evaluation, particularly emphasizing fundamental concepts like modes and mode-switching to establish practical design principles for diverse MR applications.
 
-With a rich professional history spanning top research organizations and industry leaders, he has played a key role in driving impactful projects at Microsoft Research, Snap Research, Google/North Research, and NetApp Research. Additionally, he co-founded IoTBLR (Internet of Things, Bangalore), showcasing his entrepreneurial spirit and commitment to innovation.
+He has played a key role in driving impactful projects at Microsoft Research, Snap Research, Google/North Research, and NetApp Research. Also, co-founded IoTBLR (Internet of Things, Bangalore), showcasing his entrepreneurial spirit and commitment to innovation.

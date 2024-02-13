@@ -36,4 +36,4 @@ He holds a Ph.D. in Computer Science from the University of Waterloo, Canada, wh
 
 The focus of his research is on improving productivity through the design, development, and evaluation of user interfaces. He focuses on fundamental concepts such as modes and mode-switching to establish practical design principles applicable across diverse applications.
 
-With a diverse background spanning leading research organizations and industry giants, he has played a pivotal role in driving impactful projects at Microsoft Research, Snap Research, North Research, and NetApp Research. Furthermore, demonstrating entrepreneurial acumen, he co-founded IoTBLR (Internet of Things, Bangalore), showcasing a deep commitment to technological innovation.
+With a rich professional history across top research organizations and industry leaders, he has been instrumental in driving impactful projects at Microsoft Research, Snap Research, North Research, and NetApp Research. Additionally, he co-founded IoTBLR (Internet of Things, Bangalore), highlighting his entrepreneurial spirit and commitment to innovation.

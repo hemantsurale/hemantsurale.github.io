@@ -36,4 +36,4 @@ He holds a Ph.D. in Computer Science from the University of Waterloo, Canada. He
 
 He is passionate about maximizing productivity through user interface design, AI-integrated development, and empirical evaluation, particularly emphasizing fundamental concepts like modes and mode-switching to establish practical design principles for diverse MR applications.
 
-He has played a key role in driving impactful projects at Microsoft Research, Snap Research, Google/North Research, and NetApp Research. Also, co-founded IoTBLR (Internet of Things, Bangalore), showcasing his entrepreneurial spirit and commitment to innovation.
+He led/leading impactful research at Meta, Microsoft, Snap, Google/North, and NetApp R&D departments bridging theory and practice. Also, he co-founded IoTBLR, showcasing his entrepreneurial spirit and innovation commitment.

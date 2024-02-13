@@ -30,7 +30,7 @@ social: false  # includes social icons at the bottom of the page
 latest_posts: false  # includes a list of the newest posts
 ---
 
-Hemant ([meaning](https://en.wikipedia.org/wiki/Hemant)) is a Human-Computer Interaction Researcher in Canada. His main research interests include Mixed Reality Interfaces (MR), Wearable Computing, Input Interactions (Gestural interfaces), and Applied Machine Learning (Computer Vision).  
+Hemant is a Human-Computer Interaction Researcher in Canada. His main research interests include Mixed Reality Interfaces (MR), Wearable Computing, Input Interactions (Gestural interfaces), and Applied Machine Learning (Computer Vision).  
 
 He holds a Ph.D. in Computer Science from the University of Waterloo, Canada, where he was advised by [Daniel Vogel](https://scholar.google.com/citations?user=Yi5nK1EAAAAJ&hl=en), [Mark Hancock](https://scholar.google.com/citations?hl=en&user=PYvcN3cAAAAJ), and [Edward Lank](https://scholar.google.com/citations?user=e7P8IwgAAAAJ&hl=en&oi=ao). Throughout his academic journey, Hemant has been honored with the [David R. Cheriton Graduate Scholarship](https://cs.uwaterloo.ca/current-graduate-students/funding-and-awards/david-r-cheriton-graduate-scholarship) thrice and [Snap Research Fellowship](https://snapresearchfs.splashthat.com/), alongside recognition through awards such as IDSA and CS Achievement Award.
 

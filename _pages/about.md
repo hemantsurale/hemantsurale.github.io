@@ -7,8 +7,8 @@ subtitle: Research Scientist at <img id ="animated-gif" class="animated-gif" src
 profile:
   align: left
   image: prof_pic.jpg
-  image_circular: true # crops the image to make it circular 
-  margin: 10px 10px 0px 0px;
+  image_circular: false # crops the image to make it circular 
+  margin: 0px 0px 0px 0px;
   address: >
     <div> <center> 
       <a href="https://scholar.google.com/citations?user=nUfcFwUAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">

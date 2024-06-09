@@ -5,7 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper on text-entry method for AR (STAR) is conditionally accepted at UIST'23. 
-
-<!---:sparkles: 
-After a successful internship, my intern [Taejun](https://taejun13.github.io/) is returning to [KAIST](https://hcil.kaist.ac.kr/).--->
+ Our intern [Taejun](https://taejun13.github.io/) presented the [STAR](http://tinyurl.com/UIST-STAR) paper at [UIST'23](https://www.youtube.com/live/IiKX6HRSiSk?si=EkP3-bXo1gxDgae3&t=10589). 

@@ -562,7 +562,7 @@ footer.sticky-bottom {
   font-size: 1.5rem;
 }
 .publications h2.year {
-  color: rgba(82, 81, 81, 0.5);
+  color: rgba(0, 0, 0, 0.5);
   border-top: 1px solid var(--global-divider-color);
   padding-top: 1rem;
   margin-top: 2rem;

@@ -6,5 +6,4 @@ related_posts: false
 ---
 
 Two of our intern papers on text-entry topic got conditionally accepted at ISMAR'24. :tada:
- <!-- Our intern [Junxiao (Shawn)](https://shawnshenjx.github.io/) is off to start an assistant professor position at the University of Bristol, UK. Congrats!! :sparkles: -->
 

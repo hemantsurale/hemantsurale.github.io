@@ -1,9 +1,9 @@
 ---
 layout: post
-date: 2023-03-13 08:00:00-0400
+date: 2023-02-15 08:00:00-0400
 inline: true
 related_posts: false
 ---
 
-Our paper on gaze-based mode-switching was accepted at ETRA'23. :sparkles: 
+After a successful internship, my intern [Shanaa](https://ca.linkedin.com/in/shanaa-modchalingam-97671030) is returning to the York Uni.
 <!-- :smile: -->

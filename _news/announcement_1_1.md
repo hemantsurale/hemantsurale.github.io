@@ -1,9 +1,8 @@
 ---
 layout: post
-date: 2024-05-27 20:00:00-0400
+date: 2024-08-23 20:00:00-0400
 inline: true
 related_posts: false
 ---
 
-Two of our intern papers on text-entry topic got conditionally accepted at ISMAR'24. :tada:
-
+Our interns, [Shwetha](https://shwetharajaram.github.io/), [Ruei-Che](https://rueiche.me/), and [Judy](https://junhankong.com/) submitted menuscripts to CHI'25. :raised_hands: :clap:

@@ -1,9 +1,10 @@
 ---
 layout: post
-date: 2024-08-23 20:00:00-0400
+date: 2025-01-17 20:00:00-0400
 inline: true
 related_posts: false
 ---
 
-Our interns, [Shwetha](https://shwetharajaram.github.io/), [Ruei-Che](https://rueiche.me/), and [Judy](https://junhankong.com/) submitted menuscripts to CHI'25. :raised_hands: :clap:
+Happy to announce that [Shwetha's](https://shwetharajaram.github.io/) paper on multimodal voice and gesture interaction techniques has been accepted at CHI'25!!
+
 

@@ -5,6 +5,6 @@ inline: true
 related_posts: false
 ---
 
-Happy to announce that [Shwetha's](https://shwetharajaram.github.io/) paper on multimodal voice and gesture interaction techniques has been accepted at CHI'25!!
+Happy to announce that [Shwetha's](https://shwetharajaram.github.io/) paper on multimodal voice and gesture interaction techniques has been conditionally accepted at CHI'25!!
 
 

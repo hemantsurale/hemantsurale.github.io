@@ -2,8 +2,9 @@
 layout: about
 title: about
 permalink: /
-# subtitle: Research Scientist 
+subtitle: Reimagining Keyboard 
 # at <img id ="animated-gif" class="animated-gif" src="./assets/img/logo_meta_transparent.gif"> <a href="https://tech.facebook.com/reality-labs/"> Meta Reality Labs</a>
+at <img id ="keyboard-icon" class="keyboard-icon" src="./assets/img/keyboard_icon.png">
 
 profile:
   align: left

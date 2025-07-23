@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-# subtitle: Reimagining Keyboard 
+subtitle: Reimagining Keyboards 
 # at <img id ="animated-gif" class="animated-gif" src="./assets/img/logo_meta_transparent.gif"> <a href="https://tech.facebook.com/reality-labs/"> Meta Reality Labs</a> 
 
 profile:

@@ -1,10 +1,10 @@
 ---
 layout: post
-date: 2025-01-17 20:00:00-0400
+date: 2025-08-04 20:00:00-0400
 inline: true
 related_posts: false
 ---
 
-Happy to announce that [Shwetha's](https://shwetharajaram.github.io/) paper on multimodal voice and gesture interaction techniques has been conditionally accepted at CHI'25!!
+Happy to announce that [Ruei-Che's](https://rueiche.com/) paper on exploring visual-audio modality transitions for mobile contexts has been accepted at UIST'25!!
 
 

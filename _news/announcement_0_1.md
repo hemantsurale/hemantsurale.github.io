@@ -5,6 +5,6 @@ inline: true
 related_posts: false
 ---
 
-Happy to announce that [Ruei-Che's](https://rueiche.com/) paper on exploring visual-audio modality transitions for mobile contexts has been accepted at UIST'25!!
+Happy to announce that [Ruei-Che's](https://rueiche.com/) paper on exploring visual-audio modality transitions for mobile contexts has been accepted at UIST'25!! :tada:
 
 

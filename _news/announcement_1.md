@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Two of our intern papers on text-entry topic got conditionally accepted at ISMAR'24. :tada:
+Two of our intern papers on text-entry topic got conditionally accepted at ISMAR'24. :sparkles: 

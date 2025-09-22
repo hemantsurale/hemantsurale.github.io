@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our intern [Junxiao (Shawn)](https://shawnshenjx.github.io/) is off to start an assistant professor position at the University of Bristol, UK. Congrats!! :sparkles: 
+Our intern [Junxiao (Shawn)](https://shawnshenjx.github.io/) is off to start an assistant professor position at the University of Bristol, UK. Congrats!! 

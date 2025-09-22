@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Reimagining Keyboards at <img id ="logo" src="./assets/img/favicon_tickerkey"> <a href="https://tickerkey.com/"> TickerKey </a>
+subtitle: Reimagining Keyboards at <img id ="logo" style="height: 14pt;" src="./assets/img/favicon_tickerkey.jpg"> <a href="https://tickerkey.com/"> TickerKey </a>
 # at <img id ="animated-gif" class="animated-gif" src="./assets/img/logo_meta_transparent.gif"> <a href="https://tech.facebook.com/reality-labs/"> Meta Reality Labs</a> 
 
 profile:

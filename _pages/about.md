@@ -4,7 +4,7 @@ title: about
 permalink: /
 subtitle: Reimagining Keyboards 
 # at <img id ="animated-gif" class="animated-gif" src="./assets/img/logo_meta_transparent.gif"> <a href="https://tech.facebook.com/reality-labs/"> Meta Reality Labs</a> 
-at <img id ="tickerKey_logo" class="tickerKey_logo" src="./assets/img/tickerKey_logo"> <a href="https://tickerkey.com/"> TickerKey </a> 
+# at <img id ="tickerKey_logo" class="tickerKey_logo" src="./assets/img/tickerKey_logo"> <a href="https://tickerkey.com/"> TickerKey </a> 
 
 profile:
   align: left

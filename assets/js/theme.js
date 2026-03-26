@@ -89,11 +89,8 @@ let transTheme = () => {
 
 let initTheme = (theme) => {
   if (theme == null || theme == "null") {
-    // Default to dark (futuristic) theme unless user explicitly prefers light
     const userPref = window.matchMedia;
-    if (userPref && userPref("(prefers-color-scheme: light)").matches) {
-      theme = "light";
-    } else {
+    if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
       theme = "dark";
     }
   }

@@ -90,4 +90,8 @@ html[data-theme='dark'] {
   .repo-img-dark {
     display: block;
   }
+
+  #logo {
+    mix-blend-mode: screen;
+  }
 }

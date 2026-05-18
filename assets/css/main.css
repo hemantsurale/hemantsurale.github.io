@@ -88,6 +88,9 @@ html[data-theme=dark] .repo-img-light {
 html[data-theme=dark] .repo-img-dark {
   display: block;
 }
+html[data-theme=dark] #logo {
+  mix-blend-mode: screen;
+}
 
 /******************************************************************************
  * Content

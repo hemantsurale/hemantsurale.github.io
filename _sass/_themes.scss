@@ -92,6 +92,7 @@ html[data-theme='dark'] {
   }
 
   #logo {
-    border-radius: 3px;
+    border-radius: 20%;
+    clip-path: inset(5% round 20%);
   }
 }

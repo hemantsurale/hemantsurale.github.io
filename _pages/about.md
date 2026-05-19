@@ -7,7 +7,7 @@ subtitle: Reimagining Keyboards at <img id ="logo" style="height:14pt;" src="./a
 
 profile:
   align: left
-  image: prof_pic.jpg
+  image: prof_pic.png
   image_circular: false # crops the image to make it circular 
   margin: 0px 0px 0px 0px;
   address: >
@@ -20,6 +20,9 @@ profile:
       |
       <a href="https://twitter.com/hemantsurale?lang=en" target="_blank" rel="noopener noreferrer">
       <i class="fa-brands fa-twitter"></i></a>
+      |
+      <a href="https://github.com/hemantsurale" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-github"></i></a>
       | 
       <a href="mailto:hemantsurale@meta.com">
       <i class="fa fa-envelope"></i></a> 

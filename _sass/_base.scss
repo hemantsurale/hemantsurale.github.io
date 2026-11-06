@@ -569,7 +569,7 @@ footer.sticky-bottom {
 
   h2.year {
     // color: var(--global-divider-color);
-    color: rgba($color: #000000, $alpha: 0.5);
+    color: color-mix(in srgb, var(--global-text-color) 50%, transparent);
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
     margin-top: 2rem;

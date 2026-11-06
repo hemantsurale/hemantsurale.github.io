@@ -23,6 +23,12 @@
 "ETRA":
   url: https://etra.acm.org/
 
+"ICMI":
+  url: https://dl.acm.org/conference/icmi
+
+"WSDM":
+  url: https://dl.acm.org/conference/wsdm
+
 "Thesis":
   url: https://uwspace.uwaterloo.ca/handle/10012/15950?show=full
 

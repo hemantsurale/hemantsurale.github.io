@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>What a mode switch costs, from touchscreens to VR | Hemant  Surale, PhD</title>
+    <meta name="author" content="Hemant  Surale, PhD">
+    <meta name="description" content="My PhD thesis measures how fast and accurate bare-hand mode switches are on touchscreens and in VR, then uses the results to combine a tablet with hand gestures in VR.">
+    <meta name="keywords" content="hemant surale, academic-website, portfolio-website, modes, human computer interaction, waterloo, canada, meta reality labs, meta, research">
+
+    <!-- OpenGraph -->
+    <meta property="og:site_name" content="Hemant  Surale, PhD">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hemant  Surale, PhD | What a mode switch costs, from touchscreens to VR">
+    <meta property="og:url" content="https://hemantsurale.github.io/blog/2020/what-a-mode-switch-costs/">
+    <meta property="og:description" content="My PhD thesis measures how fast and accurate bare-hand mode switches are on touchscreens and in VR, then uses the results to combine a tablet with hand gestures in VR.">
+    
+    <meta property="og:locale" content="en">
+
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="What a mode switch costs, from touchscreens to VR">
+    <meta name="twitter:description" content="My PhD thesis measures how fast and accurate bare-hand mode switches are on touchscreens and in VR, then uses the results to combine a tablet with hand gestures in VR.">
+    
+    
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+    <!-- Bootstrap Table -->
+    <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.css">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+
+    
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%91%93&lt;/text&gt;&lt;/svg&gt;">
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://hemantsurale.github.io/blog/2020/what-a-mode-switch-costs/">
+
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+    <script src="/assets/js/mycustom.js"></script>
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav sticky-bottom-footer">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Hemant </span>Surale, PhD</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/">about</a>
+              </li>
+              
+              <!-- Blog -->
+              <li class="nav-item active">
+                <a class="nav-link" href="/blog/">blog<span class="sr-only">(current)</span></a>
+              </li>
+
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications/">publications</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+
+    <!-- Content -->
+    <div class="container mt-5">
+      
+        <!-- _layouts/post.html -->
+<!-- Page/Post style -->
+<style type="text/css">
+  .qp-fig { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 1.5rem 0 0; }
+.qp-fig svg { flex: 1 1 380px; min-width: 0; max-width: 540px; height: auto; }
+.qp-fig text { fill: var(--global-text-color); font-size: 13px; }
+.qp-fig .qp-small { font-size: 12px; }
+.qp-fig .qp-bold { font-weight: 700; font-size: 14px; }
+.qp-fig .qp-muted { fill: var(--global-text-color-light); }
+.qp-fig path, .qp-fig polyline, .qp-fig line { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.qp-fig .qp-box { fill: none; stroke-width: 1.5; }
+.qp-fig .b-touch { stroke: var(--global-theme-color); }
+.qp-fig .b-mid { stroke: #e07b39; }
+.qp-fig .b-combo { stroke: #8e6fd1; }
+.qp-fig .b-theory { stroke: #2e9e6a; }
+.qp-fig .t-touch { fill: var(--global-theme-color); }
+.qp-fig .t-mid { fill: #e07b39; }
+.qp-fig .t-combo { fill: #8e6fd1; }
+.qp-fig .t-theory { fill: #2e9e6a; }
+.qp-fig .qp-arrow { stroke: var(--global-text-color-light); stroke-width: 1.5; }
+.qp-fig .qp-guide { stroke: var(--global-text-color-light); stroke-width: 1; stroke-dasharray: 3 4; opacity: 0.8; }
+.qp-fig .qp-bracket { stroke: var(--global-text-color); stroke-width: 1.5; }
+.qp-fig .seg-default { fill: var(--global-text-color-light); fill-opacity: 0.22; stroke: var(--global-text-color-light); stroke-width: 1; }
+.qp-fig .seg-mode { fill: #e07b39; fill-opacity: 0.22; stroke: #e07b39; stroke-width: 1; }
+.qp-fig .seg-switch { fill: #8e6fd1; fill-opacity: 0.4; stroke: #8e6fd1; stroke-width: 1; }
+.qp-header { text-align: center; margin-bottom: 1.5rem; }
+pre.highlight { white-space: pre-wrap; word-break: break-word; }
+.qp-links { margin-top: 0.75rem; }
+.qp-links a.btn { color: var(--global-text-color); border: 1px solid var(--global-text-color); padding: 0.25rem 1rem; margin: 0.2rem; }
+.qp-links a.btn:hover { color: var(--global-theme-color); border-color: var(--global-theme-color); }
+
+</style>
+
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">What a mode switch costs, from touchscreens to VR</h1>
+    <p class="post-meta">May 28, 2020</p>
+    <p class="post-tags">
+      <a href="/blog/2020"> <i class="fas fa-calendar fa-sm"></i> 2020 </a>
+        ·  
+        <a href="/blog/tag/mode-switching">
+          <i class="fas fa-hashtag fa-sm"></i> mode-switching</a>  
+          <a href="/blog/tag/touch">
+          <i class="fas fa-hashtag fa-sm"></i> touch</a>  
+          <a href="/blog/tag/vr">
+          <i class="fas fa-hashtag fa-sm"></i> vr</a>  
+          
+        ·  
+        <a href="/blog/category/thesis">
+          <i class="fas fa-tag fa-sm"></i> thesis</a>  
+          
+
+    </p>
+  </header>
+
+  <article class="post-content">
+    
+    <div id="markdown-content">
+      <div class="qp-header">
+Hemant Surale<br>
+University of Waterloo  ·  Supervisor: Daniel Vogel<br>
+<em>PhD thesis · University of Waterloo, 2020</em>
+<div class="qp-links">
+<a href="/assets/pdf/Thesis.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+<a href="https://uwspace.uwaterloo.ca/handle/10012/15950" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">UWSpace</a>
+<a href="/publications/#surale2020barehand" class="btn btn-sm z-depth-0" role="button">Publication</a>
+<a href="#bibtex" class="btn btn-sm z-depth-0" role="button">BibTeX</a>
+</div>
+</div>
+
+<figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/blog/what-a-mode-switch-costs/fig4-1-nondominant-techniques.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" alt="Line drawings of a person wearing a VR headset and pinching with the right hand, while the left hand makes a fist, raises an open palm, moves into the field of view, or touches the side of the head." onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+<div class="caption">Four of the bare-hand mode-switching techniques I tested in VR. The dominant hand draws with a pinch, and the non-dominant hand switches the mode by making a fist, raising an open palm, entering the field of view, or touching the head. Figure from the thesis.</div>
+
+<h2 id="quick-facts">Quick facts</h2>
+
+<p>Most interfaces have modes: the same touch can draw, pan, or select, depending on the current mode. Mode-switching techniques had been compared experimentally for mice, pucks, and pens, but there was no comprehensive analysis for touch or for bare-hand mid-air input, so I measured them, then used the results to design an application that combines both. Overall, my thesis contributes:</p>
+
+<ol>
+  <li>
+<strong>A comparison of touch mode-switching techniques:</strong> six techniques on a tablet, 36 participants, sitting and standing, with mode-switch time, error rates, and subjective ratings (Chapter 3).</li>
+  <li>
+<strong>A comparison of bare-hand mid-air mode-switching techniques in VR:</strong> techniques selected from a review of prior work, compared in two experiments with an adapted subtraction-method protocol (Chapter 4).</li>
+  <li>
+<strong>A design space for using a multi-touch tablet in VR:</strong> 11 design dimensions and an example interaction vocabulary that integrates touch and mid-air mode switching for 3D solid modelling (Chapter 5).</li>
+  <li>
+<strong>A first step toward a theory of modes:</strong> a revised mode definition, a set of mode characteristics, and an experimental task and methodology to investigate them (Chapter 6).</li>
+</ol>
+
+<h2 id="abstract">Abstract</h2>
+
+<p>Raskin defines a mode as a distinct setting within an interface where the same user input will produce results different to those it would produce in other settings. Most interfaces have multiple modes in which input is mapped to different actions, and, mode-switching is simply the transition from one mode to another. In touch interfaces, the current mode can change how a single touch is interpreted: for example, it could draw a line, pan the canvas, select a shape, or enter a command. In Virtual Reality (VR), a hand gesture-based 3D modelling application may have different modes for object creation, selection, and transformation. Depending on the mode, the movement of the hand is interpreted differently. However, one of the crucial factors determining the effectiveness of an interface is user productivity. Mode-switching time of different input techniques, either in a touch interface or in a mid-air interface, affects user productivity. Moreover, when touch and mid-air interfaces like VR are combined, making informed decisions pertaining to the mode assignment gets even more complicated. This thesis provides an empirical investigation to characterize the mode switching phenomenon in barehand touch-based and mid-air interfaces. It explores the potential of using these input spaces together for a productivity application in VR. And, it concludes with a step towards defining and evaluating the multi-faceted mode concept, its characteristics and its utility, when designing user interfaces more generally.</p>
+
+<h2 id="the-idea-measure-the-switch-then-build-with-it">The idea: measure the switch, then build with it</h2>
+
+<p>A mode error is familiar to anyone who has typed a password with CAPS LOCK on. Switching between modes can be frequent, so even small differences in how long a switch takes add up. The thesis has three steps: measure mode switching for touch and for mid-air input, combine the two input spaces in one VR application, and then step back to ask what a mode is.</p>
+
+<div class="qp-fig">
+<svg viewbox="0 0 440 396" role="img" aria-label="Thesis arc. Step 1, measure the switch: Chapter 3 compares 6 touch techniques with 36 participants sitting or standing, and Chapter 4 compares 11 mid-air techniques in VR in two experiments with 16 and 12 participants. Both feed step 2, Chapter 5, which combines a tracked tablet and bare hands for 3D modelling in VR, with 11 design dimensions evaluated with 6 participants. Step 3, Chapter 6, asks what a mode is and studies mode characteristics beyond switching time in a pilot with 12 online participants.">
+  <text class="qp-muted" x="12" y="20">1. Measure the switch</text>
+  <rect class="qp-box b-touch" x="12" y="30" width="202" height="104" rx="8"></rect>
+  <text class="qp-bold t-touch" x="26" y="54">Ch. 3 · Touch</text>
+  <text x="26" y="76">tablet, 6 techniques</text>
+  <text class="qp-small qp-muted" x="26" y="96">36 participants,</text>
+  <text class="qp-small qp-muted" x="26" y="114">sitting or standing</text>
+  <rect class="qp-box b-mid" x="226" y="30" width="202" height="104" rx="8"></rect>
+  <text class="qp-bold t-mid" x="240" y="54">Ch. 4 · Mid-air</text>
+  <text x="240" y="76">VR, 11 techniques</text>
+  <text class="qp-small qp-muted" x="240" y="96">2 experiments,</text>
+  <text class="qp-small qp-muted" x="240" y="114">16 and 12 participants</text>
+  <line class="qp-arrow" x1="113" y1="138" x2="113" y2="166"></line>
+  <polyline class="qp-arrow" points="107,160 113,167 119,160"></polyline>
+  <line class="qp-arrow" x1="327" y1="138" x2="327" y2="166"></line>
+  <polyline class="qp-arrow" points="321,160 327,167 333,160"></polyline>
+  <text class="qp-muted" x="220" y="158" text-anchor="middle">2. Combine them</text>
+  <rect class="qp-box b-combo" x="12" y="172" width="416" height="86" rx="8"></rect>
+  <text class="qp-bold t-combo" x="26" y="196">Ch. 5 · Touch and mid-air together in VR</text>
+  <text x="26" y="218">a tracked tablet plus bare hands for 3D modelling</text>
+  <text class="qp-small qp-muted" x="26" y="240">11 design dimensions, evaluated with 6 participants</text>
+  <line class="qp-arrow" x1="113" y1="262" x2="113" y2="290"></line>
+  <polyline class="qp-arrow" points="107,284 113,291 119,284"></polyline>
+  <text class="qp-muted" x="130" y="282">3. Step back</text>
+  <rect class="qp-box b-theory" x="12" y="296" width="416" height="86" rx="8"></rect>
+  <text class="qp-bold t-theory" x="26" y="320">Ch. 6 · What is a mode?</text>
+  <text x="26" y="342">characteristics beyond switching time</text>
+  <text class="qp-small qp-muted" x="26" y="364">pilot study with 12 online participants</text>
+</svg>
+<svg viewbox="0 0 440 226" role="img" aria-label="Subtraction method. A baseline cycle is two crossing strokes in the default mode. A cycle with switching is: switch in, cross in the other mode, switch out, cross in the default mode. The cycle with switching is longer, and the difference between the two cycle times is the mode-switch time.">
+  <text class="qp-bold" x="12" y="22">Timing a switch by subtraction (Ch. 3, 4)</text>
+  <text x="12" y="71">baseline</text>
+  <rect class="seg-default" x="100" y="54" width="110" height="24" rx="3"></rect>
+  <text class="qp-small" x="155" y="70" text-anchor="middle">cross</text>
+  <rect class="seg-default" x="210" y="54" width="110" height="24" rx="3"></rect>
+  <text class="qp-small" x="265" y="70" text-anchor="middle">cross</text>
+  <text x="12" y="121">with switch</text>
+  <rect class="seg-switch" x="100" y="104" width="40" height="24" rx="3"></rect>
+  <text class="qp-small" x="120" y="120" text-anchor="middle">in</text>
+  <rect class="seg-mode" x="140" y="104" width="110" height="24" rx="3"></rect>
+  <text class="qp-small" x="195" y="120" text-anchor="middle">cross</text>
+  <rect class="seg-switch" x="250" y="104" width="40" height="24" rx="3"></rect>
+  <text class="qp-small" x="270" y="120" text-anchor="middle">out</text>
+  <rect class="seg-default" x="290" y="104" width="110" height="24" rx="3"></rect>
+  <text class="qp-small" x="345" y="120" text-anchor="middle">cross</text>
+  <line class="qp-guide" x1="320" y1="44" x2="320" y2="100"></line>
+  <line class="qp-guide" x1="320" y1="132" x2="320" y2="146"></line>
+  <line class="qp-guide" x1="400" y1="94" x2="400" y2="146"></line>
+  <path class="qp-bracket" d="M320,140 L320,148 L400,148 L400,140"></path>
+  <text class="qp-small" x="360" y="166" text-anchor="middle">mode-switch time</text>
+  <text class="qp-small qp-muted" x="12" y="196">same strokes and targets; only the mode switches differ</text>
+  <text class="qp-small qp-muted" x="12" y="214">averaged over error-free cycles and adjacent baseline blocks</text>
+</svg>
+</div>
+<div class="caption">The thesis arc: two measurement studies feed an application, which leads to a broader question about modes. The timing panel shows how a switch is measured: a cycle with a mode switch (purple: switching in and out, orange: a stroke in the other mode) is compared with the same strokes done without switching (gray).</div>
+
+<p>Dillon et al. first used the subtraction method to time mode switching with a mouse, and Li et al. refined it for pens. Participants complete the same crossing or drawing task in baseline blocks (default mode only) and in compound blocks (alternating between modes). Subtracting the mean cycle time of the two adjacent baseline blocks from the compound cycle time isolates the time spent switching. For touch, this is the time between a touch-up and the next touch-down, when the hands are in the air. Because a switch involves going in and coming back out, errors are also split into mode-in and mode-out errors.</p>
+
+<h2 id="whats-inside">What’s inside</h2>
+
+<p><strong>Chapter 1: Introduction.</strong> Modes, mode errors (from CAPS LOCK to aviation accidents), the definitions of a mode I build on (MacKenzie and Raskin), and the research questions.</p>
+
+<p><strong>Chapter 2: Background.</strong> Prior mode-switching studies for mouse and pen, touch and mid-air techniques that had not been compared formally, the subtraction method, and earlier uses of tablets, tabletops, and props in mixed reality.</p>
+
+<p><strong>Chapter 3: Touch-based mode switching</strong> (<a href="/publications/#surale2017experimental">CHI ‘17 paper</a>, with Fabrice Matulic and Daniel Vogel). I compared six techniques: long press, two-finger touch, a non-preferred-hand button, hard press, thumb-on-finger, and knuckle. Thumb-on-finger and knuckle were sensed with extra hardware to simulate future sensors. 36 participants did the task either seated with the tablet on a desk or standing with the tablet on the forearm. The task, crossing five oriented rectangles while alternating between modes, is a near-replication of Li et al.’s pen study, so the results can be compared with pen.</p>
+
+<p><strong>Chapter 4: Bare-hand mid-air mode switching in VR</strong> (<a href="/publications/#surale2019experimental">CHI ‘19 paper</a>, with Fabrice Matulic and Daniel Vogel). I grouped bare-hand mid-air actions from prior research and commercial systems into classes and picked representative ones. Experiment 1 (16 participants) compared seven bare-hand techniques for the dominant and non-dominant hand, plus a controller button held in the non-dominant hand, while the dominant hand drew lines with a pinch. Experiment 2 (12 participants) tested two subtler dominant-hand pinches (an oriented pinch and a middle-finger pinch) and checked whether a pinch works as well as a controller button as the drawing trigger.</p>
+
+<p><strong>Chapter 5: Combining touch and mid-air input</strong> (<a href="/publications/#surale2019tabletinvr">CHI ‘19 paper</a>, with Aakar Gupta, Mark Hancock, and Daniel Vogel). A formative study with 10 participants asked how people would use a physical tablet in VR for 3D modelling. From 7 observations I defined 11 design dimensions (for example unimanual vs. bimanual, direct vs. indirect, physical vs. non-physical) and built an example vocabulary: two-finger drag to translate, five-finger drag to navigate, swipe-in to delete, tablet orientation to choose a transformation axis, and the tablet as a knife to slice objects. Six participants used the prototype to replicate a target model and to build their own.</p>
+
+<figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/blog/what-a-mode-switch-costs/fig5-6-tablet-interactions.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" alt="Three sketches: hands holding a tablet that cuts through a box, a hand dragging five fingers on a tablet, and two hands holding a tablet up to the chin while speaking." onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+<div class="caption">Examples from the TabletInVR vocabulary: (a) slicing an object with the tablet, (b) five-finger touch to navigate, (c) speaking to the tablet to ask for help. Figure from the thesis.</div>
+
+<p><strong>Chapter 6: Mode theory.</strong> The earlier chapters treat mode switching in isolation, but switching is only one characteristic of a mode. I built three abstract interfaces modelled on document editors (one canvas with buttons), web browsers (overlapping canvases with tabs), and code editors (multiple canvases as tiles), each with five ink colours as modes, plus an un-moded baseline. 12 participants on Amazon Mechanical Turk did a line-crossing task. From this and the literature I describe mode characteristics (mode switching, occupancy, frequency, pattern, errors, scaling, and chunking and phrasing) and propose a revised definition: “a user interface mode is an elastic psychomotor ability to progressively acquire a skill.”</p>
+
+<p><strong>Chapter 7: Conclusion.</strong> Future directions: switching between arbitrary modes instead of a fixed baseline (compound modes), other modalities and devices, more complex tasks such as active reading, and modes in aviation psychology.</p>
+
+<h2 id="key-findings">Key findings</h2>
+
+<h3 id="1-on-touch-two-fingers-is-fastest-and-long-press-is-far-slower">1. On touch, two fingers is fastest and long press is far slower</h3>
+
+<p>From fastest to slowest: two-finger (222 ms), non-preferred-hand button (311 ms), thumb-on-finger (408 ms), knuckle and hard press (500 and 568 ms, not significantly different), and long press (1244 ms), which was more than five times slower than two-finger. Sitting or standing had no significant effect on switch time. Hard press was rated the least accurate, one of the most fatiguing, and the hardest to learn. Touch switching was generally slower than Li et al.’s pen results: their non-preferred-hand and pressure times (139 and 284 ms) are roughly half of mine.</p>
+
+<figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/blog/what-a-mode-switch-costs/fig3-4-touch-switch-times.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" alt="Bar chart of mean mode-switch time by touch technique for sitting and standing. Long press is above 1100 ms in both poses; two-finger is lowest at about 200 to 250 ms." onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+<div class="caption">Mean mode-switch time by technique and pose, with 95% confidence intervals. Figure from the thesis.</div>
+
+<h3 id="2-in-vr-the-non-dominant-hand-is-faster-and-more-accurate-unless-the-dominant-hand-action-is-subtle">2. In VR, the non-dominant hand is faster and more accurate, unless the dominant-hand action is subtle</h3>
+
+<p>In Experiment 1, the order was: controller button in the non-dominant hand (331 ms), non-dominant palm (459 ms), non-dominant fist (513 ms), touching the head (528 ms), dominant palm (729 ms), non-dominant hand in the field of view (793 ms), dominant fist (846 ms), and dominant pointing (955 ms). Error rates ranged from 5.3% (controller) to 18.3% (dominant pointing), with dominant-hand postures the most error prone. In Experiment 2, the middle-finger pinch (233 ms) was not significantly different from the controller (226 ms), while the oriented pinch took 669 ms.</p>
+
+<figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/blog/what-a-mode-switch-costs/fig4-4-midair-switch-times.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" alt="Bar chart of mode-switch time for eight VR techniques. Dominant pointing is highest at about 955 ms and the non-dominant controller is lowest at about 331 ms." onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+<div class="caption">Mode-switch time by technique in Experiment 1 (D = dominant hand, ND = non-dominant hand), with 95% confidence intervals. Figure from the thesis.</div>
+
+<h3 id="3-a-pinch-is-a-practical-stand-in-for-a-controller-button">3. A pinch is a practical stand-in for a controller button</h3>
+
+<p>When the non-dominant mode-switching action was held constant, switch times with a pinch trigger and with a controller trigger were not significantly different. Baseline drawing was significantly faster with a pinch, but only by about 41 ms. Most mid-air switch times were comparable to most touch techniques.</p>
+
+<h3 id="4-tablet-and-hands-work-together-for-3d-modelling-and-interface-layout-changes-mode-errors">4. Tablet and hands work together for 3D modelling, and interface layout changes mode errors</h3>
+
+<p>All six participants replicated the target model in the TabletInVR prototype, and in free exploration they built models such as a chair, a tree, and houses. Navigation and menus on the back of the tablet were the hardest parts. In the mode-theory pilot, the multiple-canvas layout had the fewest mode errors (below 1%) but the slowest responses (638 ms), the overlapping-canvas layout the most mode errors (6.6%) at 471 ms, and the single canvas 4.8% at 529 ms. The differences in mode errors were not statistically significant.</p>
+
+<h2 id="design-implications">Design implications</h2>
+
+<ol>
+  <li>
+<strong>Touch, with current devices:</strong> use two-finger touch when accuracy is not critical and a non-preferred-hand button otherwise. Thumb-on-finger is a good choice once sensors support it. Avoid long press in most cases, and be careful with pressure.</li>
+  <li>
+<strong>An example touch mapping:</strong> one finger to draw, two fingers to pan, thumb-on-finger to select, and a knuckle to open a command menu.</li>
+  <li>
+<strong>VR, for accuracy-focused tasks:</strong> use non-dominant actions such as raising a palm or touching the head. If the dominant hand must switch modes, use a subtle variation of the selection pinch, such as the middle-finger pinch.</li>
+  <li>
+<strong>Avoid the pointing posture for frequent mode switching.</strong> It was the slowest technique and caused the most errors, even though it is a common mid-air action.</li>
+  <li>
+<strong>Combining touch and mid-air input:</strong> the design dimensions can work around current limits, for example by using indirect input on the tablet screen when 3D tracking of the tablet is unreliable.</li>
+</ol>
+
+<h2 id="limitations">Limitations</h2>
+
+<p>The touch and mid-air studies used a single mode switch at a high, regular frequency in a synthetic task, always switching to and from a common baseline. Some techniques relied on extra sensors, and results could change with other sensing. The TabletInVR evaluation was qualitative, with six participants (all male). The mode-theory study is a pilot with 12 online participants, and its results might change with a wider participant pool.</p>
+
+<h2 id="publication">Publication</h2>
+
+<p>Hemant Surale. 2020. <em>Barehand Mode Switching in Touch and Mid-Air Interfaces</em>. PhD thesis. University of Waterloo, Waterloo, Ontario, Canada. <a href="https://uwspace.uwaterloo.ca/handle/10012/15950" rel="external nofollow noopener" target="_blank">https://uwspace.uwaterloo.ca/handle/10012/15950</a></p>
+
+<h3 id="bibtex">BibTeX</h3>
+
+<div class="language-bibtex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">@phdthesis</span><span class="p">{</span><span class="nl">surale2020barehand</span><span class="p">,</span>
+  <span class="na">title</span>   <span class="p">=</span> <span class="s">{Barehand Mode Switching in Touch and Mid-Air Interfaces}</span><span class="p">,</span>
+  <span class="na">author</span>  <span class="p">=</span> <span class="s">{Surale, Hemant}</span><span class="p">,</span>
+  <span class="na">school</span>  <span class="p">=</span> <span class="s">{University of Waterloo}</span><span class="p">,</span>
+  <span class="na">address</span> <span class="p">=</span> <span class="s">{Waterloo, Ontario, Canada}</span><span class="p">,</span>
+  <span class="na">year</span>    <span class="p">=</span> <span class="s">{2020}</span><span class="p">,</span>
+  <span class="na">url</span>     <span class="p">=</span> <span class="s">{https://uwspace.uwaterloo.ca/handle/10012/15950}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="contact">Contact</h2>
+
+<p>Questions? Feel free to contact:</p>
+
+<ul>
+  <li>
+<strong>Hemant Bhaskar Surale</strong>, University of Waterloo: hemant.surale [at] gmail.com</li>
+</ul>
+
+<p class="caption">Figures are from the thesis (© 2020 Hemant Surale) and are reproduced here by the author. Chapters 3 to 5 include material published by ACM.</p>
+
+    </div>
+  </article>
+</div>
+
+      
+    </div>
+
+    <!-- Footer -->    <footer class="sticky-bottom mt-5">
+      <div class="container">
+        © Copyright 2026 Hemant  Surale, PhD. 
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    
+    
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js"></script>
+
+  <!-- Bootstrap Table -->
+  <script defer src="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.js"></script>
+
+  <!-- Load Common JS -->
+  <script src="/assets/js/no_defer.js"></script>
+  <script defer src="/assets/js/common.js"></script>
+  <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
+
+    
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ window.dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '');
+  </script>
+    
+
+  </body>
+</html>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Moving work across devices, apps, people, and time | Hemant  Surale, PhD</title>
+    <meta name="author" content="Hemant  Surale, PhD">
+    <meta name="description" content="SurfaceFleet lets content, tools, and even unfinished actions travel between devices, applications, and collaborators, backed by a resilient distributed-systems log.">
+    <meta name="keywords" content="hemant surale, academic-website, portfolio-website, modes, human computer interaction, waterloo, canada, meta reality labs, meta, research">
+
+    <!-- OpenGraph -->
+    <meta property="og:site_name" content="Hemant  Surale, PhD">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hemant  Surale, PhD | Moving work across devices, apps, people, and time">
+    <meta property="og:url" content="https://hemantsurale.github.io/blog/2020/moving-work-across-devices/">
+    <meta property="og:description" content="SurfaceFleet lets content, tools, and even unfinished actions travel between devices, applications, and collaborators, backed by a resilient distributed-systems log.">
+    
+    <meta property="og:locale" content="en">
+
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Moving work across devices, apps, people, and time">
+    <meta name="twitter:description" content="SurfaceFleet lets content, tools, and even unfinished actions travel between devices, applications, and collaborators, backed by a resilient distributed-systems log.">
+    
+    
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+    <!-- Bootstrap Table -->
+    <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.css">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+
+    
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%91%93&lt;/text&gt;&lt;/svg&gt;">
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://hemantsurale.github.io/blog/2020/moving-work-across-devices/">
+
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+    <script src="/assets/js/mycustom.js"></script>
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav sticky-bottom-footer">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Hemant </span>Surale, PhD</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/">about</a>
+              </li>
+              
+              <!-- Blog -->
+              <li class="nav-item active">
+                <a class="nav-link" href="/blog/">blog<span class="sr-only">(current)</span></a>
+              </li>
+
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications/">publications</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+
+    <!-- Content -->
+    <div class="container mt-5">
+      
+        <!-- _layouts/post.html -->
+<!-- Page/Post style -->
+<style type="text/css">
+  .qp-fig { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 1.5rem 0 0; }
+.qp-fig svg { flex: 1 1 380px; min-width: 0; max-width: 540px; height: auto; }
+.qp-fig svg.qp-narrow { flex: 1 1 220px; max-width: 300px; }
+.qp-fig text { fill: var(--global-text-color); font-size: 13px; }
+.qp-fig .qp-small { font-size: 12px; }
+.qp-fig .qp-bold { font-weight: 700; font-size: 14px; }
+.qp-fig .qp-muted { fill: var(--global-text-color-light); }
+.qp-fig path, .qp-fig polyline, .qp-fig line { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.qp-fig .qp-box { fill: var(--global-bg-color); stroke-width: 1.5; }
+.qp-fig .b-alice { stroke: var(--global-theme-color); }
+.qp-fig .b-john { stroke: #2e9e6a; }
+.qp-fig .b-log { stroke: #8e6fd1; }
+.qp-fig .b-app { stroke: #e07b39; }
+.qp-fig .b-muted { stroke: var(--global-text-color-light); }
+.qp-fig .t-alice { fill: var(--global-theme-color); }
+.qp-fig .t-john { fill: #2e9e6a; }
+.qp-fig .t-log { fill: #8e6fd1; }
+.qp-fig .t-app { fill: #e07b39; }
+.qp-fig .qp-guide { stroke: var(--global-text-color-light); stroke-width: 1; stroke-dasharray: 3 4; opacity: 0.7; }
+.qp-fig .qp-arrow { stroke: var(--global-text-color-light); stroke-width: 1.5; }
+.qp-fig .qp-head { fill: var(--global-text-color-light); }
+.qp-header { text-align: center; margin-bottom: 1.5rem; }
+pre.highlight { white-space: pre-wrap; word-break: break-word; }
+.qp-links { margin-top: 0.75rem; }
+.qp-links a.btn { color: var(--global-text-color); border: 1px solid var(--global-text-color); padding: 0.25rem 1rem; margin: 0.2rem; }
+.qp-links a.btn:hover { color: var(--global-theme-color); border-color: var(--global-theme-color); }
+
+</style>
+
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Moving work across devices, apps, people, and time</h1>
+    <p class="post-meta">October 20, 2020</p>
+    <p class="post-tags">
+      <a href="/blog/2020"> <i class="fas fa-calendar fa-sm"></i> 2020 </a>
+        ·  
+        <a href="/blog/tag/cross-device">
+          <i class="fas fa-hashtag fa-sm"></i> cross-device</a>  
+          <a href="/blog/tag/distributed-systems">
+          <i class="fas fa-hashtag fa-sm"></i> distributed-systems</a>  
+          <a href="/blog/tag/collaboration">
+          <i class="fas fa-hashtag fa-sm"></i> collaboration</a>  
+          
+        ·  
+        <a href="/blog/category/papers">
+          <i class="fas fa-tag fa-sm"></i> papers</a>  
+          
+
+    </p>
+  </header>
+
+  <article class="post-content">
+    
+    <div id="markdown-content">
+      <div class="qp-header">
+Frederik Brudy<sup>†1,2</sup>, David Ledo<sup>†1,3</sup>, Michel Pahud<sup>1</sup>, Nathalie Henry Riche<sup>1</sup>, Christian Holz<sup>1,4</sup>, Anandghan Waghmare<sup>1,5</sup>, Hemant Bhaskar Surale<sup>1,6</sup>, Marcus Peinado<sup>1</sup>, Xiaokuan Zhang<sup>1,7</sup>, Shannon Joyner<sup>1,8</sup>, Badrish Chandramouli<sup>1</sup>, Umar Farooq Minhas<sup>1</sup>, Jonathan Goldstein<sup>1</sup>, William Buxton<sup>1</sup>, Ken Hinckley<sup>1</sup><br>
+<sup>1</sup>Microsoft Research, Redmond  ·  <sup>2</sup>University College London  ·  <sup>3</sup>University of Calgary  ·  <sup>4</sup>ETH Zürich  ·  <sup>5</sup>Georgia Institute of Technology  ·  <sup>6</sup>University of Waterloo  ·  <sup>7</sup>Ohio State University  ·  <sup>8</sup>Cornell University<br>
+<sup>†</sup>The first two authors contributed equally.<br>
+<em>Conference paper · UIST '20: ACM Symposium on User Interface Software and Technology, Virtual Event, USA</em>
+<div class="qp-links">
+<a href="/assets/pdf/Surfacefleet.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+<a href="https://doi.org/10.1145/3379337.3415874" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">ACM DL</a>
+<a href="/publications/#brudy2020surfacefleet" class="btn btn-sm z-depth-0" role="button">Publication</a>
+<a href="#bibtex" class="btn btn-sm z-depth-0" role="button">BibTeX</a>
+</div>
+</div>
+
+<figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/blog/moving-work-across-devices/fig1-teaser.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" alt="Illustration of a tablet with floating semi-transparent Applets, including image cards, a color picker, and a red and blue Portfolio case, connected by lines to a desktop monitor, a laptop, and a document page. Labels read Applets, Portfolios, and Promises." onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+<div class="caption">SurfaceFleet unbinds UI elements from the device, the application, the user, and time. Applets unbind controls from applications, Portfolios unbind content and tools from devices and people, and Promises unbind actions from time. Figure from the paper.</div>
+
+<h2 id="quick-facts">Quick facts</h2>
+
+<p>The things we work with, such as a clipboard, a color picker, or a photo we still need, are usually tied to one device, one app, one person, and the present moment. SurfaceFleet, led by Frederik Brudy (University College London) and David Ledo (University of Calgary) at Microsoft Research, is a working Windows system that loosens all four ties at once. Overall, our work contributes:</p>
+
+<ol>
+  <li>
+<strong>A framing of mobility</strong> as transitions in “place” along four cornerstones of unboundedness: device, application, user, and time.</li>
+  <li>
+<strong>The SurfaceFleet system</strong>, built on a resilient distributed-systems foundation (Ambrosia) that logs every change to shared state, so moving to another device becomes a cross-device fail-over.</li>
+  <li>
+<strong>A preliminary toolkit</strong> for writing SurfaceFleet applications in C# without deep prior expertise in distributed systems.</li>
+  <li>
+<strong>Interaction techniques</strong>, explored as technology probes: Applets, Portfolios, Interaction Promises, Tools, Media Primitives, and Containers.</li>
+</ol>
+
+<h2 id="abstract">Abstract</h2>
+
+<p>Knowledge work increasingly spans multiple computing surfaces. Yet in status quo user experiences, content as well as tools, behaviors, and workflows are largely bound to the current device: running the current application, for the current user, and at the current moment in time. SurfaceFleet is a system and toolkit that uses resilient distributed programming techniques to explore cross-device interactions that are unbounded in these four dimensions of device, application, user, and time. As a reference implementation, we describe an interface built using Surface Fleet that employs lightweight, semi-transparent UI elements known as Applets. Applets appear always-on-top of the operating system, application windows, and (conceptually) above the device itself. But all connections and synchronized data are virtualized and made resilient through the cloud. For example, a sharing Applet known as a Portfolio allows a user to drag and drop unbound Interaction Promises into a document. Such promises can then be fulfilled with content asynchronously, at a later time (or multiple times), from another device, and by the same or a different user.</p>
+
+<h2 id="the-idea-unbind-the-action-not-just-the-file">The idea: unbind the action, not just the file</h2>
+
+<p>Services like Dropbox, OneDrive, and Google Drive synchronize whole files and folders, and Slack and Teams share inside their own app. SurfaceFleet works at a finer grain: single pieces of content, tools, and inputs. Every change to shared state is written to a durable, replayable log in the cloud, so any device in a group (a <em>federation</em>) can catch up by replaying it, right away or later. That one mechanism lets a single drag and drop cross all four boundaries.</p>
+
+<div class="qp-fig">
+<svg viewbox="0 0 440 380" role="img" aria-label="Sequence diagram of one Interaction Promise. Alice, on her desktop in Word, drags an empty image Applet into her document, creating promise P, then drops P into a shared Portfolio; both steps are written to the cloud log. Later, John's device on site replays the log and P appears in the Portfolio. John snaps a photo to fulfill P, which is written to the log. Alice's desktop replays the log and the Word placeholder updates by its ID.">
+  <text class="qp-bold t-alice" x="85" y="24" text-anchor="middle">Alice</text>
+  <text class="qp-bold t-log" x="220" y="24" text-anchor="middle">cloud log</text>
+  <text class="qp-bold t-john" x="355" y="24" text-anchor="middle">John</text>
+  <text class="qp-small qp-muted" x="85" y="40" text-anchor="middle">desktop, Word</text>
+  <text class="qp-small qp-muted" x="220" y="40" text-anchor="middle">replayable</text>
+  <text class="qp-small qp-muted" x="355" y="40" text-anchor="middle">on site, camera</text>
+  <line class="qp-guide" x1="85" y1="50" x2="85" y2="345"></line>
+  <line class="qp-guide" x1="220" y1="50" x2="220" y2="345"></line>
+  <line class="qp-guide" x1="355" y1="50" x2="355" y2="345"></line>
+  <rect class="qp-box b-alice" x="20" y="57" width="130" height="42" rx="6"></rect>
+  <text class="qp-small" x="85" y="74" text-anchor="middle">drags empty image</text>
+  <text class="qp-small" x="85" y="90" text-anchor="middle">Applet into Word</text>
+  <line class="qp-arrow" x1="150" y1="78" x2="182" y2="78"></line>
+  <polygon class="qp-head" points="188,78 180,74 180,82"></polygon>
+  <rect class="qp-box b-log" x="188" y="67" width="64" height="22" rx="4"></rect>
+  <text class="qp-small" x="220" y="82" text-anchor="middle">P created</text>
+  <rect class="qp-box b-alice" x="20" y="113" width="130" height="42" rx="6"></rect>
+  <text class="qp-small" x="85" y="130" text-anchor="middle">drops P into a</text>
+  <text class="qp-small" x="85" y="146" text-anchor="middle">shared Portfolio</text>
+  <line class="qp-arrow" x1="150" y1="134" x2="182" y2="134"></line>
+  <polygon class="qp-head" points="188,134 180,130 180,138"></polygon>
+  <rect class="qp-box b-log" x="188" y="123" width="64" height="22" rx="4"></rect>
+  <text class="qp-small" x="220" y="138" text-anchor="middle">P shared</text>
+  <line class="qp-guide" x1="20" y1="172" x2="420" y2="172"></line>
+  <text class="qp-small qp-muted" x="420" y="166" text-anchor="end">later</text>
+  <rect class="qp-box b-log" x="188" y="193" width="64" height="22" rx="4"></rect>
+  <text class="qp-small" x="220" y="208" text-anchor="middle">replay</text>
+  <line class="qp-arrow" x1="252" y1="204" x2="284" y2="204"></line>
+  <polygon class="qp-head" points="290,204 282,200 282,208"></polygon>
+  <rect class="qp-box b-john" x="290" y="183" width="130" height="42" rx="6"></rect>
+  <text class="qp-small" x="355" y="200" text-anchor="middle">device catches up:</text>
+  <text class="qp-small" x="355" y="216" text-anchor="middle">P is in Portfolio</text>
+  <rect class="qp-box b-john" x="290" y="239" width="130" height="42" rx="6"></rect>
+  <text class="qp-small" x="355" y="256" text-anchor="middle">snaps a photo</text>
+  <text class="qp-small" x="355" y="272" text-anchor="middle">to fulfill P</text>
+  <line class="qp-arrow" x1="290" y1="260" x2="258" y2="260"></line>
+  <polygon class="qp-head" points="252,260 260,256 260,264"></polygon>
+  <rect class="qp-box b-log" x="188" y="249" width="64" height="22" rx="4"></rect>
+  <text class="qp-small" x="220" y="264" text-anchor="middle">P = photo</text>
+  <rect class="qp-box b-log" x="188" y="305" width="64" height="22" rx="4"></rect>
+  <text class="qp-small" x="220" y="320" text-anchor="middle">replay</text>
+  <line class="qp-arrow" x1="188" y1="316" x2="156" y2="316"></line>
+  <polygon class="qp-head" points="150,316 158,312 158,320"></polygon>
+  <rect class="qp-box b-alice" x="20" y="295" width="130" height="42" rx="6"></rect>
+  <text class="qp-small" x="85" y="312" text-anchor="middle">Word placeholder</text>
+  <text class="qp-small" x="85" y="328" text-anchor="middle">updates by its ID</text>
+  <text class="qp-small qp-muted" x="220" y="368" text-anchor="middle">every step is one state change in the log</text>
+</svg>
+<svg class="qp-narrow" viewbox="0 0 280 380" role="img" aria-label="Layers on one device: an Applet floats above unmodified app windows, which sit on the Windows window manager and the device. Synchronizable state changes flow between the device and a durable cloud log of state changes s1 to s6, built on Ambrosia, CRA, and Azure. A new device replays the log, so switching devices is a fail-over.">
+  <text class="qp-small qp-muted" x="20" y="24">on each device</text>
+  <rect class="qp-box b-app" x="40" y="38" width="90" height="30" rx="6"></rect>
+  <text class="t-app" x="85" y="58" text-anchor="middle">Applet</text>
+  <text class="qp-small" x="160" y="50">floats above any</text>
+  <text class="qp-small" x="160" y="64">app window</text>
+  <rect class="qp-box b-muted" x="20" y="82" width="130" height="32" rx="4"></rect>
+  <text x="85" y="103" text-anchor="middle">unmodified apps</text>
+  <text class="qp-small qp-muted" x="160" y="95">drag &amp; drop, COM,</text>
+  <text class="qp-small qp-muted" x="160" y="109">clipboard formats</text>
+  <rect class="qp-box b-muted" x="20" y="126" width="130" height="28" rx="4"></rect>
+  <text x="85" y="145" text-anchor="middle">window manager</text>
+  <text class="qp-small qp-muted" x="160" y="145">Windows</text>
+  <rect class="qp-box b-muted" x="20" y="166" width="130" height="28" rx="4"></rect>
+  <text x="85" y="185" text-anchor="middle">device</text>
+  <text class="qp-small qp-muted" x="160" y="178">desktop, tablet,</text>
+  <text class="qp-small qp-muted" x="160" y="192">or large display</text>
+  <line class="qp-arrow" x1="85" y1="204" x2="85" y2="234"></line>
+  <polygon class="qp-head" points="85,197 81,205 89,205"></polygon>
+  <polygon class="qp-head" points="85,241 81,233 89,233"></polygon>
+  <text class="qp-small qp-muted" x="97" y="216">[Synchronizable]</text>
+  <text class="qp-small qp-muted" x="97" y="230">state changes</text>
+  <rect class="qp-box b-log" x="20" y="244" width="250" height="36" rx="6"></rect>
+  <rect class="qp-box b-log" x="30" y="252" width="30" height="20" rx="3"></rect>
+  <rect class="qp-box b-log" x="70" y="252" width="30" height="20" rx="3"></rect>
+  <rect class="qp-box b-log" x="110" y="252" width="30" height="20" rx="3"></rect>
+  <rect class="qp-box b-log" x="150" y="252" width="30" height="20" rx="3"></rect>
+  <rect class="qp-box b-log" x="190" y="252" width="30" height="20" rx="3"></rect>
+  <rect class="qp-box b-log" x="230" y="252" width="30" height="20" rx="3"></rect>
+  <text class="qp-small" x="45" y="266" text-anchor="middle">s1</text>
+  <text class="qp-small" x="85" y="266" text-anchor="middle">s2</text>
+  <text class="qp-small" x="125" y="266" text-anchor="middle">s3</text>
+  <text class="qp-small" x="165" y="266" text-anchor="middle">s4</text>
+  <text class="qp-small" x="205" y="266" text-anchor="middle">s5</text>
+  <text class="qp-small" x="245" y="266" text-anchor="middle">s6</text>
+  <text class="qp-small t-log" x="145" y="300" text-anchor="middle">durable log of state changes</text>
+  <text class="qp-small qp-muted" x="145" y="316" text-anchor="middle">(Ambrosia, CRA, Azure)</text>
+  <text class="qp-small" x="145" y="344" text-anchor="middle">a new device replays the log,</text>
+  <text class="qp-small" x="145" y="360" text-anchor="middle">so switching devices is a fail-over</text>
+</svg>
+</div>
+<div class="caption">One Interaction Promise from creation to fulfillment, crossing an application (Word), a second device and user (John, on site), and time (it is filled later). Each step is one change to shared state; the other device catches up by replaying the log. The layer view shows where an Applet sits on a device and where its state lives.</div>
+
+<p>Each of the four cornerstones maps to one part of the design:</p>
+
+<ul>
+  <li>
+<strong>Device:</strong> each client keeps a local copy of shared state, and a device that joins replays the log. Moving activity to another machine is a special case of fail-over.</li>
+  <li>
+<strong>Application:</strong> Applets are independent programs that float above the window manager. They reach unmodified programs through drag and drop, the system clipboard, and COM plugins, rather than living inside a browser or one sharing app.</li>
+  <li>
+<strong>User:</strong> the Portfolio that carries your own work between devices also passes it to a collaborator. Individual tools are collaborative tools, and vice versa.</li>
+  <li>
+<strong>Time:</strong> an Interaction Promise is a placeholder for content that does not exist yet. It can be fulfilled later, and more than once.</li>
+</ul>
+
+<h2 id="system-and-toolkit">System and toolkit</h2>
+
+<p><strong>Platform.</strong> SurfaceFleet runs on Windows and is written in C# with the .NET Framework and Windows Presentation Foundation (WPF).</p>
+
+<p><strong>Shared state.</strong> We built a custom infrastructure on top of Ambrosia, an open-source system that captures state changes in a deterministically replayable log, persisted through Azure. Ambrosia uses CRA, which virtualizes connections between devices, so the system is robust to IP address changes. Clients in a federation reach the shared state through a federation-specific connection string.</p>
+
+<p><strong>Programming model.</strong> Developers tag a property as <code class="language-plaintext highlighter-rouge">[Synchronizable]</code> and subscribe to <code class="language-plaintext highlighter-rouge">ModelUpdated</code> events for remote changes. They write no extra logic for distributed failure cases. The toolkit handles basic types, images, colors, lists, and dictionaries, and developers can add their own classes with a C# <code class="language-plaintext highlighter-rouge">DataContract</code>.</p>
+
+<p><strong>Working with existing apps.</strong> Dragging an image Applet puts three formats on the drag: a file path to a copy of the image, a bitmap in several formats for unmodified programs, and an internal ID for SurfaceFleet components. Plugins use COM to integrate with Word, Illustrator, Photoshop, and PowerPoint. In Word, a Promise is an invisible bookmark with a unique ID around a placeholder image; on fulfillment, SurfaceFleet finds the ID and replaces the content.</p>
+
+<p><strong>Trust.</strong> Clients must run an organizationally approved operating system image. Windows device attestation through the CPU’s Trusted Platform Module (TPM) checks this before a device receives the key to a federation’s shared state.</p>
+
+<figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/blog/moving-work-across-devices/fig5-architecture.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" alt="Layered architecture diagram. Top: Applets such as Portfolios, Tools, and Media primitives. Below: cross-application features (access through WPF, Win32, and COM APIs, multiple formats in the system clipboard, SurfaceFleet plugins) connecting to Word, Illustrator, PowerPoint, and others. Middle: client devices. Bottom: API and tools (Synchronizeable tagging, data contracts, property change notification, state data at about 60 ms latency and transient data at about 15 ms), over Ambrosia, CRA, and Azure." onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+<div class="caption">The system, toolkit, and underlying technical components. The figure lists a latency of about 60 ms for state data and about 15 ms for transient data, which bypasses the log. Figure from the paper.</div>
+
+<h2 id="interaction-techniques">Interaction techniques</h2>
+
+<p>SurfaceFleet has five mechanisms that users combine to unbind content and tools:</p>
+
+<ol>
+  <li>
+<strong>Portfolios:</strong> like an art portfolio case, a shared portal for content and tools. A Portfolio wiggles when something is dragged over it, shows its contents sticking out on every device that has access, and gives an item back as a floating Applet on a double-tap.</li>
+  <li>
+<strong>Interaction Promises:</strong> placeholders for content that is not available yet. All placeholders linked to the same Applet update when it changes, locally, on another device, or by another user. A Promise can also return a Container with several options to choose from.</li>
+  <li>
+<strong>Tools:</strong> Applets for generic commands, such as a Color Picker that samples a pixel from any device, a Camera tool, Tele-point and Tele-type for passing your mouse or keyboard to another device, Screen Grab, Extract (a snapshot of the visible page), and a Clipboard tool.</li>
+  <li>
+<strong>Media Primitives:</strong> single pieces of content (images, rich text, or colors) lifted into floating Applets that can be dropped into Word, Illustrator, PowerPoint, Photoshop, File Explorer, or other Applets.</li>
+  <li>
+<strong>Containers:</strong> a fanned-out sheaf of items that works as a multi-object visual clipboard. Linked to the Clipboard tool and shared through a Portfolio, it becomes a distributed clipboard.</li>
+</ol>
+
+<figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/blog/moving-work-across-devices/fig8-promises.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" alt="Three steps. Instantiation: an empty image Applet is dragged into a Word document, creating a dynamic link. First fulfillment: an image is dropped from File Explorer onto the Applet. Update: all placeholders in the Word document show the new image." onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+<div class="caption">Interaction Promises: (1) the user drags an empty placeholder into a document, then (2) populates it with an initial image, or (3) receives updates when the linked Applet is fulfilled from other devices or by other users. Figure from the paper.</div>
+
+<h2 id="what-do-we-learn">What do we learn?</h2>
+
+<p>The paper presents design probes rather than a controlled study. The lessons below come from building and using the system ourselves and from preliminary pilot feedback.</p>
+
+<h3 id="1-a-few-concepts-combine-into-many-workflows">1. A few concepts combine into many workflows</h3>
+
+<p>In our usage scenario, an architect named Alice creates a Portfolio, collects site photos into a Container on her tablet on the train and opens them on her office desktop, inserts a placeholder that her on-site co-worker John fills with a photo, and, in a meeting, works with two colleagues who pass their mouse pointers to a large display. All four steps reuse the same five mechanisms. Because sharing is split into small Applets and Tools rather than whole files, people can share parts of documents and other intermediate work.</p>
+
+<figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/blog/moving-work-across-devices/fig2-usage-scenario.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" alt="Four-row illustrated storyboard: S1, main interface and Portfolio creation from the SurfaceFleet taskbar; S2, dragging images on a tablet into a Container in a Portfolio that syncs to a desktop; S3, Alice drags an empty image Applet into Word and shares it, John takes a photo to fulfill it, and her document auto-updates; S4, colleagues share telepointers on a large display and extract copies of a page." onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+<div class="caption">The usage scenario spans devices, applications, users, and time with Portfolios, Containers, Interaction Promises, and Tools. Figure from the paper.</div>
+
+<h3 id="2-current-tools-each-cover-only-part-of-the-problem">2. Current tools each cover only part of the problem</h3>
+
+<p>Each kind of unbinding has precedents, but existing services handle them separately: file and folder sync (Dropbox, OneDrive, Google Drive), messaging silos (Slack, Teams), second screens and handoff (Apple Continuity), and collaborative editing inside one app (Office 365, Google Docs). SurfaceFleet is the first distributed system to address all four cornerstones simultaneously, for both tools and pieces of content, with only a few toolkit abstractions and interactions.</p>
+
+<figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/blog/moving-work-across-devices/fig3-comparison.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" alt="Comparison grid with four columns: Device unbound, App unbound, User unbound, Time unbound. The top row shows SurfaceFleet's approach in each (Portfolios and Containers, Applets, Promises, Promises). The bottom row shows current approaches: file-centric sync such as Dropbox, application-centric silos, separate tools for single and multiple users, and collaboration within application silos." onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+<div class="caption">SurfaceFleet (top row) compared with current approaches (bottom row) for each cornerstone. Figure from the paper.</div>
+
+<h3 id="3-the-current-design-suits-small-active-work">3. The current design suits small, active work</h3>
+
+<p>The interface is meant for transient work-objects in active use, not the long tail of items in cold storage: a single active project rather than an archive, small groups rather than large meetings, and semi-private sharing among trusted peers rather than open participation. Leaving Applets around like papers on a messy desk might not scale to hundreds of them. These choices belong to the current probes, not to the four cornerstones, the distributed-systems foundation, or the toolkit.</p>
+
+<h2 id="limitations">Limitations</h2>
+
+<ul>
+  <li>
+<strong>No formal evaluation.</strong> We make no strong claims that SurfaceFleet makes distributed work “better”, and it is not yet developed enough to deploy for real work or longitudinal studies.</li>
+  <li>
+<strong>Feedback and awareness.</strong> The interface does not show which devices or users a Portfolio is shared with, or who is connected. We rely on social protocol, which leaves room for dragging something private into the wrong Applet.</li>
+  <li>
+<strong>No device discovery.</strong> The system does not sense nearby devices or services to form federations automatically.</li>
+  <li>
+<strong>Packaging.</strong> The technical foundation has many layers that would need better packaging to be usable and maintainable, and the system runs on Windows only. At the time, we were investigating distributed interactions for JavaScript and Android through Ambrosia and CRA.</li>
+</ul>
+
+<h2 id="publication">Publication</h2>
+
+<p>Frederik Brudy, David Ledo, Michel Pahud, Nathalie Henry Riche, Christian Holz, Anandghan Waghmare, Hemant Bhaskar Surale, Marcus Peinado, Xiaokuan Zhang, Shannon Joyner, Badrish Chandramouli, Umar Farooq Minhas, Jonathan Goldstein, William Buxton, and Ken Hinckley. 2020. SurfaceFleet: Exploring Distributed Interactions Unbounded from Device, Application, User, and Time. In <em>Proceedings of the 33rd Annual ACM Symposium on User Interface Software and Technology (UIST ‘20)</em>, Virtual Event, USA. ACM, 7-21. <a href="https://doi.org/10.1145/3379337.3415874" rel="external nofollow noopener" target="_blank">https://doi.org/10.1145/3379337.3415874</a></p>
+
+<h3 id="bibtex">BibTeX</h3>
+
+<div class="language-bibtex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">brudy2020surfacefleet</span><span class="p">,</span>
+  <span class="na">title</span>     <span class="p">=</span> <span class="s">{SurfaceFleet: Exploring Distributed Interactions Unbounded from Device, Application, User, and Time}</span><span class="p">,</span>
+  <span class="na">author</span>    <span class="p">=</span> <span class="s">{Brudy, Frederik and Ledo, David and Pahud, Michel and Henry Riche, Nathalie and Holz, Christian and Waghmare, Anandghan and Surale, Hemant Bhaskar and Peinado, Marcus and Zhang, Xiaokuan and Joyner, Shannon and Chandramouli, Badrish and Minhas, Umar Farooq and Goldstein, Jonathan and Buxton, William and Hinckley, Ken}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 33rd Annual ACM Symposium on User Interface Software and Technology}</span><span class="p">,</span>
+  <span class="na">series</span>    <span class="p">=</span> <span class="s">{UIST '20}</span><span class="p">,</span>
+  <span class="na">location</span>  <span class="p">=</span> <span class="s">{Virtual Event, USA}</span><span class="p">,</span>
+  <span class="na">pages</span>     <span class="p">=</span> <span class="s">{7--21}</span><span class="p">,</span>
+  <span class="na">year</span>      <span class="p">=</span> <span class="s">{2020}</span><span class="p">,</span>
+  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{ACM}</span><span class="p">,</span>
+  <span class="na">doi</span>       <span class="p">=</span> <span class="s">{10.1145/3379337.3415874}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="contact">Contact</h2>
+
+<p>Questions? Feel free to contact:</p>
+
+<ul>
+  <li>
+<strong>Frederik Brudy</strong>, Microsoft Research and University College London: f.brudy [at] cs.ucl.ac.uk</li>
+  <li>
+<strong>David Ledo</strong>, Microsoft Research and University of Calgary: david.ledo [at] ucalgary.ca</li>
+  <li>
+<strong>Hemant Bhaskar Surale</strong>, Microsoft Research and University of Waterloo: hemant.surale [at] gmail.com</li>
+</ul>
+
+<p class="caption">Figures are from the paper (© 2020 ACM) and are reproduced here by the authors.</p>
+
+    </div>
+  </article>
+</div>
+
+      
+    </div>
+
+    <!-- Footer -->    <footer class="sticky-bottom mt-5">
+      <div class="container">
+        © Copyright 2026 Hemant  Surale, PhD. 
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    
+    
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js"></script>
+
+  <!-- Bootstrap Table -->
+  <script defer src="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.js"></script>
+
+  <!-- Load Common JS -->
+  <script src="/assets/js/no_defer.js"></script>
+  <script defer src="/assets/js/common.js"></script>
+  <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
+
+    
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ window.dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '');
+  </script>
+    
+
+  </body>
+</html>
